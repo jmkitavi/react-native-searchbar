@@ -151,6 +151,14 @@ export default class Search extends Component {
     }
   };
 
+  toggle = () => {
+    if (this.state.show) {
+      this.hide();
+    } else {
+      this.show();
+    }
+  };
+
   _doHide = () => {
     const { clearOnHide } = this.props;
     this.setState({ show: false });
